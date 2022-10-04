@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  /*responsividade em imagens, se ajusta ao tamanho do browser*/
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px , 1.6rem = 16px */
+  /* facilita para utilizar a unidade de medida rem */
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  /*fonte mais usada no site*/
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
