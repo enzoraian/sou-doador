@@ -19,12 +19,13 @@ header {
     li {
 
       &:not(li:last-child) {
-        margin-right: 2rem;
+        margin-right: 2.4rem;
       }
 
-      a {
+      .menu-item {
         background-color: $gray-bg-btn;
         padding: 1rem 2.4rem;
+        border-radius: 0.4rem;
 
         color: $black;
         font-size: 1.7rem;
@@ -36,6 +37,7 @@ header {
           color: $white;
         }
       }
+
     }
 
   }
