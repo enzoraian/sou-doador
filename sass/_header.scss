@@ -1,0 +1,42 @@
+header {
+  background-color: $white;
+  height: 9rem;
+  display: flex;
+
+  .container {
+    @include flex(row, space-between, center);
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 10rem;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+
+    li {
+
+      &:not(li:last-child) {
+        margin-right: 2rem;
+      }
+
+      a {
+        background-color: $gray-bg-btn;
+        padding: 1rem 2.4rem;
+
+        color: $black;
+        font-size: 1.7rem;
+
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: $red;
+          color: $white;
+        }
+      }
+    }
+
+  }
+}
