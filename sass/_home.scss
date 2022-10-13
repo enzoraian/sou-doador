@@ -5,6 +5,8 @@
   background: -o-linear-gradient(left, #b51841, #414141);
   background: linear-gradient(to right, #b51841, #414141);
 
+  @include flex(row, center, center);
+  height: calc(100vh - 9rem);
   padding: 5rem 0;
 
   .container {
