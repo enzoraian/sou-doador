@@ -38,46 +38,31 @@
       <!--MENU-->
       <nav>
         <ul class="menu">
-          <li><a class="menu-item" href="#">Home</a></li>
+          <li><a class="menu-item" href="index.html">Home</a></li>
           <li><a class="menu-item" href="sobre.html">Sobre</a></li>
           <li><a class="menu-item" href="pqdoar.html">Porque Doar?</a></li>
-          <li>
-            <button class="menu-item contact js-open-modal">Contato</button>
-            <div class="modal">
-              <!--Camada transparente atrás do modal, pra dar a sensação que ele está em cima do conteúdo-->
-              <div class="overlay"></div>
-
-              <!--Conteúdo-->
-              <div class="box">
-                <img style="width: 10rem; height: 10rem;" src="img/cel-phone.png" alt="">
-                <h2 style="margin-bottom: 1rem; font-size: 3.4rem;">Entre em contato!</h2>
-                <p style="font-size: 2.4rem;">(83) 99999-9999</p>
-                <button class="btn-close js-close-modal">OK</button>
-              </div>
-            </div>
-
-          </li>
+          <li><a class="menu-item contact" href="#">Contato</a></li>
         </ul>
       </nav>
 
     </div>
   </header>
 
-  <!--SECTION LOGIN-->
-  <section class="section-login">
+  <!--SECTION CADASTRO-->
+  <section class="section-cadastro">
     <!--CONTAINER MAX-WIDTH 123.6rem-->
     <div class="container">
 
-      <div class="container-login">
+      <div class="container-cadastro">
 
         <!--IMAGE-->
         <div class="image">
-          <img src="img/img-login.webp" alt="">
+          <img style="width: 32rem;" src="img/img-cadastro.webp" alt="">
         </div>
 
         <!--FORM CONTAINER-->
         <div class="form-container">
-          <h2>Faça o login</h2>
+          <h2>Cadastro</h2>
 
           <!--FORM-->
           <form action="">
@@ -93,7 +78,20 @@
               <input class="form-input" type="password" placeholder="Senha">
             </div>
 
-            <a href="cadastro.html" class="btn-login">Login</a>
+            <button class="btn-login js-open-modal">Cadastrar</button>
+            <div class="modal">
+              <!--Camada transparente atrás do modal, pra dar a sensação que ele está em cima do conteúdo-->
+              <div class="overlay"></div>
+
+              <!--Conteúdo-->
+              <div class="box">
+                <img src="img/icon-check.png" alt="">
+                <h2 style="margin-bottom: 1rem; font-size: 3.4rem;">Tudo certo</h2>
+                <p>Cadastro realizado com sucesso!</p>
+                <button class="btn-close js-close-modal">OK</button>
+              </div>
+            </div>
+
           </form>
         </div>
       </div>
@@ -104,6 +102,5 @@
   <!--MODAL JS-->
   <script src="js/modal.js"></script>
 </body>
-
 
 </html>
