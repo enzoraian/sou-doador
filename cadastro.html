@@ -1,107 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sou Doador - Campina Grande</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sou Doador - Campina Grande</title>
+		<!--FAVICON-->
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
-  <!--FAVICON-->
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		<!--CSS-->
+		<link rel="stylesheet" href="css/main.min.css" />
 
-  <!--CSS-->
-  <link rel="stylesheet" href="css/main.min.css">
+		<!--FONTS-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
 
-  <!--FONTS-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+	<body>
+		<!--HEADER-->
+		<header>
+			<!--CONTAINER MAX-WIDTH 123.6rem-->
+			<div class="container">
+				<!--LOGO-->
+				<a href="./" class="logo">
+					<img src="img/logo-soudoador.png" alt="" />
+				</a>
 
-</head>
+				<!--MENU-->
+				<nav>
+					<ul class="menu">
+						<li><a class="menu-item" href="index.html">Home</a></li>
+						<li><a class="menu-item" href="sobre.html">Sobre</a></li>
+						<li><a class="menu-item" href="pqdoar.html">Porque Doar?</a></li>
+						<li><a class="menu-item contact" href="#">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-<body>
+		<!--SECTION CADASTRO-->
+		<section class="section-cadastro">
+			<!--CONTAINER MAX-WIDTH 123.6rem-->
+			<div class="container">
+				<div class="container-cadastro">
+					<!--IMAGE-->
+					<div class="image">
+						<img style="width: 32rem" src="img/img-cadastro.webp" alt="" />
+					</div>
 
-  <!--HEADER-->
-  <header>
-    <!--CONTAINER MAX-WIDTH 123.6rem-->
-    <div class="container">
-      <!--LOGO-->
-      <a href="./" class="logo">
-        <img src="img/logo-soudoador.png" alt="">
-      </a>
+					<!--FORM CONTAINER-->
+					<div class="form-container">
+						<h2>Cadastro</h2>
 
-      <!--MENU-->
-      <nav>
-        <ul class="menu">
-          <li><a class="menu-item" href="index.html">Home</a></li>
-          <li><a class="menu-item" href="sobre.html">Sobre</a></li>
-          <li><a class="menu-item" href="pqdoar.html">Porque Doar?</a></li>
-          <li><a class="menu-item contact" href="#">Contato</a></li>
-        </ul>
-      </nav>
+						<!--FORM-->
+						<form action="">
+							<!--nome-->
+							<div class="form-input-container">
+								<img src="img/img-nome.png" alt="" />
+								<input class="form-input" type="email" placeholder="Nome" />
+							</div>
+							<!--localidade-->
+							<div class="form-input-container">
+								<img src="img/img-localidade.png" alt="" />
+								<input
+									class="form-input"
+									type="email"
+									placeholder="Localidade"
+								/>
+							</div>
+							<!--Contato-->
+							<div class="form-input-container">
+								<img src="img/img-wa.png" alt="" />
+								<input class="form-input" type="email" placeholder="Whatsapp" />
+							</div>
 
-    </div>
-  </header>
+							<!--Típo Sanguineo-->
+							<div
+								class="form-input-container"
+								style="justify-content: initial"
+							>
+								<img src="img/img-tipo-sangue.png" alt="" />
+								<label for="estado"></label>
 
-  <!--SECTION CADASTRO-->
-  <section class="section-cadastro">
-    <!--CONTAINER MAX-WIDTH 123.6rem-->
-    <div class="container">
+								<select
+									id="estado"
+									name="estado"
+									style="background-color: #deeeff"
+								>
+									<option value="A+">A+</option>
+									<option value="A-">A-</option>
+									<option value="AB">AB</option>
+									<option value="B" +>B+</option>
+									<option value="O-">O-</option>
+									<option value="B-">B-</option>
+								</select>
+							</div>
+							<!--EMAIL-->
+							<div class="form-input-container">
+								<img src="img/icon-email.svg" alt="" />
+								<input class="form-input" type="email" placeholder="Email" />
+							</div>
 
-      <div class="container-cadastro">
+							<!--PASSWORD-->
+							<div class="form-input-container">
+								<img src="img/icon-password.svg" alt="" />
+								<input class="form-input" type="password" placeholder="Senha" />
+							</div>
 
-        <!--IMAGE-->
-        <div class="image">
-          <img style="width: 32rem;" src="img/img-cadastro.webp" alt="">
-        </div>
+							<button style="margin-top: 2rem" class="btn-login js-open-modal">
+								Cadastrar
+							</button>
+							<a
+								style="text-align: center; font-size: 2rem; display: block"
+								href="index.html"
+								>Voltar para login</a
+							>
+							<div class="modal">
+								<!--Camada transparente atrás do modal, pra dar a sensação que ele está em cima do conteúdo-->
+								<div class="overlay"></div>
 
-        <!--FORM CONTAINER-->
-        <div class="form-container">
-          <h2>Cadastro</h2>
+								<!--Conteúdo-->
+								<div class="box">
+									<img src="img/icon-check.png" alt="" />
+									<h2 style="margin-bottom: 1rem; font-size: 3.4rem">
+										Tudo certo
+									</h2>
+									<p>Cadastro realizado com sucesso!</p>
+									<button class="btn-close js-close-modal">OK</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 
-          <!--FORM-->
-          <form action="">
-            <!--EMAIL-->
-            <div class="form-input-container">
-              <img src="img/icon-email.svg" alt="">
-              <input class="form-input" type="email" placeholder="Email">
-            </div>
-
-            <!--PASSWORD-->
-            <div class="form-input-container">
-              <img src="img/icon-password.svg" alt="">
-              <input class="form-input" type="password" placeholder="Senha">
-            </div>
-
-            <button style="margin-top: 2rem;" class="btn-login js-open-modal">Cadastrar</button>
-            <a style="text-align: center; font-size: 2rem; display: block;" href="index.html">Voltar para login</a>
-            <div class="modal">
-              <!--Camada transparente atrás do modal, pra dar a sensação que ele está em cima do conteúdo-->
-              <div class="overlay"></div>
-
-              <!--Conteúdo-->
-              <div class="box">
-                <img src="img/icon-check.png" alt="">
-                <h2 style="margin-bottom: 1rem; font-size: 3.4rem;">Tudo certo</h2>
-                <p>Cadastro realizado com sucesso!</p>
-                <button class="btn-close js-close-modal">OK</button>
-              </div>
-            </div>
-
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!--MODAL JS-->
-  <script src="js/modal.js"></script>
-</body>
-
+		<!--MODAL JS-->
+		<script src="js/modal.js"></script>
+	</body>
 </html>
