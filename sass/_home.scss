@@ -75,6 +75,7 @@
         border-radius: 0.6rem;
         text-align: center;
         margin-top: 3rem;
+        margin-bottom: 2rem;
 
         transition: all 0.3s;
 
@@ -206,4 +207,12 @@
 .titulo-03 {
   font-size: 4.2rem;
   margin-bottom: 1rem;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #b51841;
 }
