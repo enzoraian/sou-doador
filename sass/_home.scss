@@ -216,3 +216,157 @@ a {
 a:hover {
   color: #b51841;
 }
+
+.section-cards {
+  padding: 9.2rem 0;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+
+    .card {
+      width: 50vh;
+      height: 50vh;
+      background-color: rgba(211, 211, 211, .15);
+      border-radius: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+      transition: all 0.3s;
+
+      &:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, 1);
+        cursor: pointer;
+
+        h2 {
+          a {
+            color: white;
+          }
+        }
+      }
+
+      img {
+        width: 10rem;
+        height: 10rem;
+      }
+
+      h2 {
+        a {
+          font-size: 3rem;
+        }
+      }
+
+    }
+  }
+}
+
+.tabs-button {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.tabs-button a {
+  font-size: 2.4rem;
+  border: 3px solid #b51841;
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+
+  transition: all 0.3s;
+}
+
+.tabs-button a:link,
+.tabs-button a:visited {
+  color: black;
+  font-weight: 600;
+}
+
+.tabs-button a:hover {
+  background-color: #b51841;
+  color: white;
+}
+
+.tabs-panel {
+  width: fit-content;
+  border: 4px solid black;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.tabs-panel .content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.tabs-panel .content img {
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.tabs-panel .content p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+/*Implementação*/
+
+.tabs-button a.active {
+  background: #b51841;
+  color: white;
+}
+
+.tabs-panel .content {
+  display: none;
+}
+
+.tabs-panel .content.active {
+  display: block;
+  animation: fadeIn .3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.section-doacao {
+  padding: 9.2rem 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.btn {
+  background-color: #b51841;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
