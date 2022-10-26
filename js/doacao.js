@@ -268,13 +268,31 @@ buttonsTab.forEach((buttonTab, index) => {
 })
 
 contentsTab.forEach((contentTab, index) => {
-    const contato = document.createElement("div");
-    contato.innerHTML = `
-      <div class="contato tabs-panel"  style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
-        <p>nome: Vitor Hugo Gonçalves</p>
-        <p>Tipo: A+</p>
-        <button class="btn">Entrar em contato</button>
-      </div>
-    `;
-    contentTab.appendChild(contato);
+    doadores.forEach((doador) => {
+        if (contentTab.id === doador.tipo) {
+            let contato = document.createElement("div");
+            contato.innerHTML = `
+            <div class="contato tabs-panel"  style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                <p>nome: ${doador.nome}</p>
+                <p>Tipo: ${doador.tipo}</p>
+                <div>
+                    <button class="btn js-open-modal">Entrar em contato</button>
+                    <div class="modal">
+                        <!--Camada transparente atrás do modal, pra dar a sensação que ele está em cima do conteúdo-->
+                        <div class="overlay"></div>
+
+                        <!--Conteúdo-->
+                        <div class="box">
+                            <img style="width: 10rem; height: 10rem;" src="img/cel-phone.png" alt="">
+                            <h2 style="margin-bottom: 1rem; font-size: 3.4rem;">Entre em contato!</h2>
+                            <p style="font-size: 2.4rem;">${doador.telefone}</p>
+                            <button class="btn-close js-close-modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+            contentTab.appendChild(contato);
+        }        
+    });
 });
