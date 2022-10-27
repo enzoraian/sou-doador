@@ -137,7 +137,7 @@
   width: 100%;
   height: 100vh;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 0;
 }
 
@@ -155,10 +155,8 @@
   align-items: center;
 }
 
-.modal .overlay-doacao {}
-
 .modal .box-doacao {
-  width: 70%;
+  width: 30%;
   height: 40vh;
 }
 
@@ -301,11 +299,18 @@ a:hover {
 }
 
 .tabs-panel {
-  width: fit-content;
+  width: 70%;
   border: 4px solid black;
   padding: 2rem;
   border-radius: 0.6rem;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
 }
 
 .tabs-panel-contato {
@@ -335,6 +340,12 @@ a:hover {
 }
 
 .tabs-panel .content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.content h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -402,4 +413,11 @@ a:hover {
 .btn:hover {
   background-color: black;
   color: white;
+}
+
+.img-blood {
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  margin: 0 auto;
 }

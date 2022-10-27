@@ -1,6 +1,9 @@
 const buttonsTab = document.querySelectorAll('.js-tabs-button li a')
 const contentsTab = document.querySelectorAll('.js-tabs-panel div')
 
+console.log(buttonsTab)
+console.log(contentsTab)
+
 const doadores = [
   {
     "nome": "Vitor Hugo Gonçalves",
@@ -64,62 +67,62 @@ const doadores = [
   },
   {
     "nome": "Fernando Cardoso",
-    "tipo": "B+",
+    "tipo": "B-",
     "telefone": "(83) 3868-5358"
   },
   {
     "nome": "Luiz Fernando da Luz",
-    "tipo": "B+",
+    "tipo": "B-",
     "telefone": "(83) 3439-6440"
   },
   {
     "nome": "Melissa da Rosa",
-    "tipo": "B+",
+    "tipo": "B-",
     "telefone": "(83) 2479-9802"
   },
   {
     "nome": "Thomas Vieira",
-    "tipo": "B+",
+    "tipo": "B-",
     "telefone": "(83) 2841-8865"
   },
   {
     "nome": "Murilo Sales",
-    "tipo": "B+",
+    "tipo": "B-",
     "telefone": "(83) 3558-2845"
   },
   {
     "nome": "Otávio da Conceição",
-    "tipo": "B+",
+    "tipo": "B-",
     "telefone": "(83) 3251-8566"
   },
   {
     "nome": "Sra. Laura da Paz",
-    "tipo": "B-",
+    "tipo": "B+",
     "telefone": "(83) 2651-2427"
   },
   {
     "nome": "Valentina Vieira",
-    "tipo": "B-",
+    "tipo": "B+",
     "telefone": "(83) 2725-2627"
   },
   {
     "nome": "Melissa da Conceição",
-    "tipo": "B-",
+    "tipo": "B+",
     "telefone": "(83) 3129-4211"
   },
   {
     "nome": "Milena Cardoso",
-    "tipo": "B-",
+    "tipo": "B+",
     "telefone": "(83) 3681-3523"
   },
   {
     "nome": "Theo Porto",
-    "tipo": "B-",
+    "tipo": "B+",
     "telefone": "(83) 2462-8178"
   },
   {
     "nome": "João Miguel da Costa",
-    "tipo": "B-",
+    "tipo": "B+",
     "telefone": "(83) 2177-6248"
   },
   {
@@ -267,7 +270,7 @@ buttonsTab.forEach((buttonTab, index) => {
   })
 })
 
-contentsTab.forEach((contentTab, index) => {
+contentsTab.forEach((contentTab) => {
   doadores.forEach((doador) => {
     if (contentTab.id === doador.tipo) {
       let contato = document.createElement("div");
